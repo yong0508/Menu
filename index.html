@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1e2f, #437281);
+}
+
+.container {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 40px 25px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.boton {
+    display: block;
+    text-decoration: none;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+.bebidas {
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    color: white;
+}
+
+.comida {
+    background: linear-gradient(135deg, #56ab2f, #a8e063);
+    color: white;
+}
+
+.boton:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>¡Bienvenido!</h1>
+    <h1>Restaurante La Costa</h1>
+    <p>Seleccione una opción</p>
+
+    <a class="boton bebidas" href="pdf/Menu Bebidas.pdf" target="_blank">🍹 Menú de Bebidas</a>
+    <a class="boton comida" href="pdf/Menu Rest Costa.pdf" target="_blank">🍽️ Menú de Comida</a>
+</div>
+
+</body>
+</html>
